@@ -1,15 +1,17 @@
 {
   "name": "tearon4",
   "version": "1.0.0",
-  "description": "",
+  "description": "for tearon4.github.io",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "node-sass": "^4.7.2",
     "nodemon": "^1.15.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss assets/sass/main.scss assets/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
