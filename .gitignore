@@ -1,6 +1,8 @@
 #file ignore
 Thumbs.db
 .Ds_Store
+package-lock.json
 
 #directory ignore
 .sass-cache/
+node_modules/

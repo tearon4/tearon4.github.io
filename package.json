@@ -1,0 +1,24 @@
+{
+  "name": "tearon4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.15.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tearon4/tearon4.github.io.git"
+  },
+  "author": "tearon4",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tearon4/tearon4.github.io/issues"
+  },
+  "homepage": "https://github.com/tearon4/tearon4.github.io#readme"
+}
