@@ -15,47 +15,30 @@
 		$darken: 3;
 		$desaturate: 3;
 
-		&.color0 {
-			@include gradient-background(false, 1, 20%, 60%);
-		}
-
-		&.color1 {
-			@include gradient-background;
-			background-color: _palette(accent1);
-		}
-
-		&.color2 {
-			@include gradient-background;
-			background-color: _palette(accent2);
-		}
-
-		&.color3 {
-			@include gradient-background;
-			background-color: _palette(accent3);
-		}
-
-		&.color4 {
-			@include gradient-background;
-			background-color: _palette(accent4);
+		@for $i from 0 through 20 {
+			&.color#{$i} {
+				@include gradient-background;
+				background-color: _palette(accent#{$i});
+			}
 		}
 
 		&.color1-alt {
-			@include gradient-background(false, $opacity);
+			@include gradient-background-small(false, $opacity);
 			background-color: desaturate(darken(_palette(accent1), $darken), $desaturate);
 		}
 
 		&.color2-alt {
-			@include gradient-background(false, $opacity);
+			@include gradient-background-small(false, $opacity);
 			background-color: desaturate(darken(_palette(accent2), $darken), $desaturate);
 		}
 
 		&.color3-alt {
-			@include gradient-background(false, $opacity);
+			@include gradient-background-small(false, $opacity);
 			background-color: desaturate(darken(_palette(accent3), $darken), $desaturate);
 		}
 
 		&.color4-alt {
-			@include gradient-background(false, $opacity);
+			@include gradient-background-small(false, $opacity);
 			background-color: desaturate(darken(_palette(accent4), $darken), $desaturate);
 		}
 	}
@@ -182,24 +165,11 @@
 		$darken: 3;
 		$desaturate: 3;
 
-		&.color1 {
-			@include gradient-background-small;
-			background-color: _palette(accent1);
-		}
-
-		&.color2 {
-			@include gradient-background-small;
-			background-color: _palette(accent2);
-		}
-
-		&.color3 {
-			@include gradient-background-small;
-			background-color: _palette(accent3);
-		}
-
-		&.color4 {
-			@include gradient-background-small;
-			background-color: _palette(accent4);
+		@for $i from 0 through 20 {
+			&.color#{$i} {
+				@include gradient-background;
+				background-color: _palette(accent#{$i});
+			}
 		}
 
 		&.color1-alt {
@@ -221,6 +191,87 @@
 			@include gradient-background-small(false, $opacity);
 			background-color: desaturate(darken(_palette(accent4), $darken), $desaturate);
 		}
+
+		&.color5-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent5), $darken), $desaturate);
+		}
+
+		&.color6-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent6), $darken), $desaturate);
+		}
+
+		&.color7-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent7), $darken), $desaturate);
+		}
+
+		&.color8-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent8), $darken), $desaturate);
+		}
+
+		&.color9-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent9), $darken), $desaturate);
+		}
+
+		&.color10-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent10), $darken), $desaturate);
+		}
+
+		&.color11-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent11), $darken), $desaturate);
+		}
+
+		&.color12-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent12), $darken), $desaturate);
+		}
+
+		&.color13-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent13), $darken), $desaturate);
+		}
+
+		&.color14-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent14), $darken), $desaturate);
+		}
+
+		&.color15-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent15), $darken), $desaturate);
+		}
+
+		&.color16-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent16), $darken), $desaturate);
+		}
+
+		&.color17-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent17), $darken), $desaturate);
+		}
+
+		&.color18-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent18), $darken), $desaturate);
+		}
+
+		&.color19-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent19), $darken), $desaturate);
+		}
+
+		&.color20-alt {
+			@include gradient-background-small(false, $opacity);
+			background-color: desaturate(darken(_palette(accent20), $darken), $desaturate);
+		}
+
 	}
 
 	@include breakpoint(small) {
