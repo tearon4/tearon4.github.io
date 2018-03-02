@@ -139,6 +139,10 @@
 
 		@include spans(_size(span-fixed));
 
+		&.mini {
+			width: 20rem;
+		}
+
 		&.small {
 			width: 35rem;
 		}
@@ -151,6 +155,7 @@
 			width: 65rem;
 		}
 
+		&.mini,
 		&.small,
 		&.medium,
 		&.large {
@@ -339,6 +344,7 @@
 
 			@include spans-small(_size(span-fixed));
 
+			&.mini,
 			&.small,
 			&.medium,
 			&.large {
